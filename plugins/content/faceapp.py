@@ -3,12 +3,13 @@ from handler.base_plugin_command import CommandPlugin
 from vk.helpers import upload_photo
 import aiohttp, random, string
 
-BASE_API_URL = 'https://node-01.faceapp.io/api/v2.3/photos'  # Ensure no slash at the end.
-BASE_HEADERS = {'User-agent': "FaceApp/1.0.229 (Linux; Android 4.4)"}
+BASE_API_URL = 'https://node-03.faceapp.io/api/v2.7/photos' # Ensure no slash at the end.
+BASE_HEADERS = {'User-agent': "FaceApp/2.0.561 (Linux; Android 6.0)"}
 DEVICE_ID_LENGTH = 8
 KNOWN_FILTERS = ['smile', 'smile_2', 'hot', 'old', 'young', 'female', 
                  'male', 'hollywood', 'fun_glasses', 'hitman', 'mustache_free', 
-                 'pan', 'heisenberg']
+                 'pan', 'heisenberg', 'no-filter', 'female_2', 'impression',
+                 'goatee', 'mustache', 'hipster', 'lion', 'bangs', 'glasses', 'wave', 'makeup']
 # Thanks to https://github.com/vasilysinitsin/Faces
 
 class FacePlugin(CommandPlugin):
